@@ -1,0 +1,68 @@
+:root{
+  --background: #011730;
+  --white: #F3F4F6;
+  --x: #0F1419;
+  --fb: #316FF6;
+  --twitch:#6441a5;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--background);
+  height: 100vh;
+  display: grid;  
+  place-items: center;
+}
+
+.social-container{
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.social{
+  height: 3rem;
+  width: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  outline: 2px solid var(--white);
+  background: transparent;
+  border: none;
+  transition: all 0.2s;
+}
+.social:hover{
+  cursor: pointer;
+  transition: all 0.2s ;
+  outline-offset: 3px;
+}
+.social svg{
+  transition: 0.2s;
+  fill: var(--white);
+}
+.social:hover svg{
+  transform: scale(1.35);
+}
+
+#X:hover{
+  background-color: var(--white);
+}
+#X:hover svg{
+  fill: var(--x);
+}
+#fb:hover{
+  background-color: var(--fb);
+}
+#insta:hover{
+  background: radial-gradient(
+    circle at 30% 107%, #f9ce34 0%, #f9ce34 5%, #fd5949 45%, #ee2a7b 60%, #6228d7 90%
+    );
+}
+#twitch:hover{
+  background-color: var(--twitch);
+}
